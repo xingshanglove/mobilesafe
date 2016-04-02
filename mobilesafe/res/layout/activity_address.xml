@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_tiltle" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/iconfont_miaojiesellerarrowleft" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/address_title" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_input_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tools_button_bg"
+        android:text="@string/query"
+        android:textColor="@color/color_light_green" />
+
+    <TextView
+        android:id="@+id/tv_query_result"
+        style="@style/ContentStyle"
+        android:text="@string/query_result" />
+
+</LinearLayout>

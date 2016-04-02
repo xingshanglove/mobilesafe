@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ccc">
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_tiltle" >
+
+		<ImageView
+		    android:id="@+id/iv_back"
+		    android:layout_width="30dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:src="@drawable/iconfont_miaojiesellerarrowleft" />
+		<ImageView 
+		    android:id="@+id/iv_add"
+		    android:layout_width="30dp"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/iconfont_miaojieadd"
+		    />
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/blacknumber" />
+    </RelativeLayout>
+	<include 
+	    android:id="@+id/lv_function"
+	    layout="@layout/listview"/>
+</LinearLayout>

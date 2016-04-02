@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+     >
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignLeft="@+id/tv_choice_c"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/choice_button_bg"
+        android:gravity="center"
+        android:textColor="@color/color_black"
+        android:text="@string/cancle"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/tv_choice_c"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/color_black"
+        android:layout_marginRight="10dp"
+        android:layout_above="@+id/tv_cancle"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/choice_button_bg"
+        android:gravity="center"
+        android:text="@string/choice_2"
+        android:textSize="@dimen/font_large" />
+
+    <TextView
+        android:id="@+id/tv_choice_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/color_black"
+        android:layout_above="@+id/tv_choice_c"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/choice_button_bg"
+        android:gravity="center"
+        android:text="@string/choice_1"
+        android:textSize="@dimen/font_large" />
+
+</RelativeLayout>
